@@ -66,6 +66,8 @@
 5. Added various .crt files to /etc/ca-certificates.conf
 6. Ran update-ca-certificates --fresh. The stdout shows 130 certs updated
 7. Check .crt have been added to /etc/ssl/certs/ca-certificates.crt. They are successfully added. 
+!!!
+8. Realised that my local machine was pointing to a different host for api.ravelin.com. Thus lead me to discovering a hard coded /etc/hosts mapping to an unwanted host ip. Commenting out the /etc/hosts api url fixed the issue.
 
 
 ### PROBLEM 3:
